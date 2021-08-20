@@ -11,7 +11,7 @@ function App() {
   useEffect(() => {
   
   fetchProduct();
-},[])
+},[setData])
 const fetchProduct = async() => {
   try{
     const res = await fetch("https://5cdd0a92b22718001417c19d.mockapi.io/api/products");
